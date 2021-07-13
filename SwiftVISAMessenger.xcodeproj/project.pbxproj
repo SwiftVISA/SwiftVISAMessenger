@@ -13,6 +13,12 @@
 		5A124062269D187E00E45FFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A124061269D187E00E45FFB /* Preview Assets.xcassets */; };
 		5A12406C269D187E00E45FFB /* SwiftVISAMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12406B269D187E00E45FFB /* SwiftVISAMessengerTests.swift */; };
 		5A124076269D187E00E45FFB /* SwiftVISAMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A124075269D187E00E45FFB /* SwiftVISAMessengerUITests.swift */; };
+		5A124084269D19B600E45FFB /* SwiftVISASwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5A124083269D19B600E45FFB /* SwiftVISASwift */; };
+		5AA67655269D45690075C743 /* SeeayaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5AA67654269D45690075C743 /* SeeayaUI */; };
+		5AA67657269D58BD0075C743 /* QueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA67656269D58BD0075C743 /* QueryView.swift */; };
+		5AA67659269D593B0075C743 /* MockInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA67658269D593B0075C743 /* MockInstrument.swift */; };
+		5AB2C061269D88B200952B86 /* InstrumentAttributeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2C060269D88B200952B86 /* InstrumentAttributeEditor.swift */; };
+		5AB2C063269D94B600952B86 /* StringEscaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2C062269D94B600952B86 /* StringEscaping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,12 @@
 		5A12406B269D187E00E45FFB /* SwiftVISAMessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVISAMessengerTests.swift; sourceTree = "<group>"; };
 		5A124071269D187E00E45FFB /* SwiftVISAMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftVISAMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A124075269D187E00E45FFB /* SwiftVISAMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVISAMessengerUITests.swift; sourceTree = "<group>"; };
+		5A9F8A3A269D44B0002442D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5AA67656269D58BD0075C743 /* QueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryView.swift; sourceTree = "<group>"; };
+		5AA67658269D593B0075C743 /* MockInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInstrument.swift; sourceTree = "<group>"; };
+		5AA6765A269D63770075C743 /* SwiftVISAMessenger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftVISAMessenger.entitlements; sourceTree = "<group>"; };
+		5AB2C060269D88B200952B86 /* InstrumentAttributeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentAttributeEditor.swift; sourceTree = "<group>"; };
+		5AB2C062269D94B600952B86 /* StringEscaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEscaping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA67655269D45690075C743 /* SeeayaUI in Frameworks */,
+				5A124084269D19B600E45FFB /* SwiftVISASwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +106,14 @@
 		5A124059269D187D00E45FFB /* SwiftVISAMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				5AA6765A269D63770075C743 /* SwiftVISAMessenger.entitlements */,
+				5A9F8A3A269D44B0002442D6 /* Info.plist */,
 				5A12405A269D187D00E45FFB /* SwiftVISAMessengerApp.swift */,
 				5A12405C269D187D00E45FFB /* ContentView.swift */,
+				5AA67656269D58BD0075C743 /* QueryView.swift */,
+				5AA67658269D593B0075C743 /* MockInstrument.swift */,
+				5AB2C060269D88B200952B86 /* InstrumentAttributeEditor.swift */,
+				5AB2C062269D94B600952B86 /* StringEscaping.swift */,
 				5A12405E269D187E00E45FFB /* Assets.xcassets */,
 				5A124060269D187E00E45FFB /* Preview Content */,
 			);
@@ -140,6 +160,10 @@
 			dependencies = (
 			);
 			name = SwiftVISAMessenger;
+			packageProductDependencies = (
+				5A124083269D19B600E45FFB /* SwiftVISASwift */,
+				5AA67654269D45690075C743 /* SeeayaUI */,
+			);
 			productName = SwiftVISAMessenger;
 			productReference = 5A124057269D187D00E45FFB /* SwiftVISAMessenger.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +236,10 @@
 				Base,
 			);
 			mainGroup = 5A12404E269D187C00E45FFB;
+			packageReferences = (
+				5A124082269D19B600E45FFB /* XCRemoteSwiftPackageReference "SwiftVISASwift" */,
+				5AA67653269D45690075C743 /* XCRemoteSwiftPackageReference "SeeayaUI" */,
+			);
 			productRefGroup = 5A124058269D187D00E45FFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -255,6 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A12405D269D187D00E45FFB /* ContentView.swift in Sources */,
+				5AA67657269D58BD0075C743 /* QueryView.swift in Sources */,
+				5AA67659269D593B0075C743 /* MockInstrument.swift in Sources */,
+				5AB2C061269D88B200952B86 /* InstrumentAttributeEditor.swift in Sources */,
+				5AB2C063269D94B600952B86 /* StringEscaping.swift in Sources */,
 				5A12405B269D187D00E45FFB /* SwiftVISAMessengerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftVISAMessenger/SwiftVISAMessenger.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -421,12 +454,16 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftVISAMessenger/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = SwiftVISAMessenger;
+				INFOPLIST_KEY_CFBundleName = SwiftVISAMessenger;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.connorbarnes.SwiftVISAMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftVISAMessenger/SwiftVISAMessenger.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -450,12 +488,16 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftVISAMessenger/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = SwiftVISAMessenger;
+				INFOPLIST_KEY_CFBundleName = SwiftVISAMessenger;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.connorbarnes.SwiftVISAMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -479,7 +521,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.connorbarnes.SwiftVISAMessengerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -504,7 +546,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.connorbarnes.SwiftVISAMessengerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -600,6 +642,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A124082269D19B600E45FFB /* XCRemoteSwiftPackageReference "SwiftVISASwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftVISA/SwiftVISASwift.git";
+			requirement = {
+				branch = actor;
+				kind = branch;
+			};
+		};
+		5AA67653269D45690075C743 /* XCRemoteSwiftPackageReference "SeeayaUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/seeaya/SeeayaUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A124083269D19B600E45FFB /* SwiftVISASwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A124082269D19B600E45FFB /* XCRemoteSwiftPackageReference "SwiftVISASwift" */;
+			productName = SwiftVISASwift;
+		};
+		5AA67654269D45690075C743 /* SeeayaUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AA67653269D45690075C743 /* XCRemoteSwiftPackageReference "SeeayaUI" */;
+			productName = SeeayaUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A12404F269D187C00E45FFB /* Project object */;
 }
